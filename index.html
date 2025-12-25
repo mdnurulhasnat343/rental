@@ -4,267 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Optimized Facebook Meta Tags -->
+    <title>Rent To Own Club - Start Your Homeownership Journey</title>
     <meta property="og:title" content="come on, click on my post and share...">
-    <meta property="og:description" content="Rent To Own Club - Homeownership Made Easy">
+    <meta property="og:description" content="Stop throwing money away on rent! Join our program today.">
     <meta property="og:image" content="https://i.ibb.co.com/V0NRyJK6/Screenshot-2025-1225-202717.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://renttoownclub.com">
+    <meta property="og:url" content="https://mdnurulhasnat343.github.io/rent-to-own/">
     <meta property="og:type" content="website">
+    
     <meta name="facebook:cta" content="APPLY_NOW">
-    
-    <title>come on, click on my post and share...</title>
-    
+
     <style>
-        /* Reset and Base Styles */
-        * {
+        body {
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.5;
+            background-color: #f4f7f6;
+            text-align: center;
             color: #333;
-            background-color: #ffffff;
-            max-width: 100%;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
         }
-        
-        /* Container */
         .container {
-            width: 100%;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 0 20px;
-            flex: 1;
-        }
-        
-        /* Header/Logo */
-        .header {
-            text-align: center;
-            padding: 30px 0 20px;
-        }
-        
-        .logo {
-            font-size: 24px;
-            font-weight: 700;
-            color: #6a11cb;
-            letter-spacing: 0.5px;
-        }
-        
-        /* Main Image */
-        .preview-image {
-            width: 100%;
-            margin: 0 auto 30px;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .preview-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        /* Content Section */
-        .content {
-            text-align: center;
-            padding: 0 0 40px;
-        }
-        
-        h1 {
-            font-size: 28px;
-            color: #2d3748;
-            margin-bottom: 20px;
-            font-weight: 700;
-            line-height: 1.3;
-        }
-        
-        .description {
-            font-size: 18px;
-            color: #4a5568;
-            margin-bottom: 40px;
-            line-height: 1.6;
             max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
-        
-        /* Button */
-        .button-container {
-            margin: 40px 0;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(135deg, #8a2be2 0%, #4169e1 100%);
-            color: white;
-            font-size: 20px;
-            font-weight: 700;
-            padding: 18px 50px;
-            border-radius: 50px;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            box-shadow: 0 6px 20px rgba(138, 43, 226, 0.3);
-            border: none;
-            cursor: pointer;
-            letter-spacing: 0.5px;
-        }
-        
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(138, 43, 226, 0.4);
-            background: linear-gradient(135deg, #9b3ce6 0%, #4a75ed 100%);
-        }
-        
-        .cta-button:active {
-            transform: translateY(1px);
-        }
-        
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 30px 0;
-            margin-top: auto;
-            color: #718096;
-            font-size: 14px;
-            border-top: 1px solid #e2e8f0;
+        .header-img {
             width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
         }
-        
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .container {
-                padding: 0 15px;
-            }
-            
-            h1 {
-                font-size: 24px;
-            }
-            
-            .description {
-                font-size: 16px;
-            }
-            
-            .cta-button {
-                font-size: 18px;
-                padding: 16px 40px;
-            }
+        h1 {
+            font-size: 22px;
+            color: #2c3e50;
+            margin-bottom: 10px;
         }
-        
-        @media (max-width: 480px) {
-            .header {
-                padding: 25px 0 15px;
-            }
-            
-            .logo {
-                font-size: 20px;
-            }
-            
-            h1 {
-                font-size: 22px;
-                margin-bottom: 15px;
-            }
-            
-            .description {
-                font-size: 16px;
-                margin-bottom: 30px;
-            }
-            
-            .cta-button {
-                font-size: 18px;
-                padding: 16px 35px;
-                width: 100%;
-                max-width: 320px;
-            }
-            
-            .preview-image {
-                margin-bottom: 25px;
-            }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 25px;
         }
-        
-        /* Animation for button */
-        @keyframes pulse {
-            0% {
-                box-shadow: 0 6px 20px rgba(138, 43, 226, 0.3);
-            }
-            50% {
-                box-shadow: 0 6px 25px rgba(138, 43, 226, 0.5);
-            }
-            100% {
-                box-shadow: 0 6px 20px rgba(138, 43, 226, 0.3);
-            }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 10px rgba(110, 142, 251, 0.4);
         }
-        
-        .cta-button {
-            animation: pulse 2s infinite;
+        .btn:active {
+            transform: scale(0.95);
+        }
+        .footer {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f9f9f9;
+            font-size: 12px;
+            color: #999;
+            border-top: 1px solid #eee;
         }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <!-- Header -->
-        <div class="header">
-            <div class="logo">Rent To Own Club</div>
-        </div>
+        <img src="https://i.ibb.co.com/GQ8v16sR/cr-w-1333-h-1000.jpg" alt="Home Image" class="header-img">
         
-        <!-- Facebook Preview Image -->
-        <div class="preview-image">
-            <img src="https://i.ibb.co.com/V0NRyJK6/Screenshot-2025-1225-202717.png" alt="Rent To Own Club - Split Preview">
-        </div>
+        <h1>🏠 Your Path to Homeownership Starts Here!</h1>
+        <p>Join our Rent To Own Club today! Stop throwing money away on rent. Our program helps you move into your dream home with low down payments. Discover a smarter way to own a home.</p>
         
-        <!-- Main Content -->
-        <div class="content">
-            <h1>🏠 Your Path to Homeownership Starts Here!</h1>
-            
-            <div class="description">
-                Join our Rent To Own Club today and stop throwing money away on rent.
-            </div>
-            
-            <!-- CTA Button -->
-            <div class="button-container">
-                <a href="https://www.chd93jds.com/2686CZWN/3QQG7/" class="cta-button">
-                    Find Your Dream Home
-                </a>
-            </div>
-        </div>
+        <a href="https://www.chd93jds.com/2686CZWN/3QQG7/" class="btn">Find Your Dream Home</a>
     </div>
-    
-    <!-- Footer -->
-    <footer>
+
+    <div class="footer">
         Copyright © 2025. All rights reserved.
-    </footer>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const button = document.querySelector('.cta-button');
-            
-            // Add click tracking (optional)
-            button.addEventListener('click', function() {
-                // In a real implementation, you might add analytics tracking here
-                console.log('CTA button clicked - redirecting to application');
-                
-                // Optional: Add a slight delay for better UX
-                setTimeout(() => {
-                    window.location.href = this.href;
-                }, 300);
-            });
-            
-            // Add subtle hover effect enhancement
-            button.addEventListener('mouseenter', function() {
-                this.style.animation = 'none';
-            });
-            
-            button.addEventListener('mouseleave', function() {
-                this.style.animation = 'pulse 2s infinite';
-            });
-        });
-    </script>
+    </div>
+
 </body>
 </html>
