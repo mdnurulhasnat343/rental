@@ -3,32 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rent To Own Club</title>
+    <title>Home Money Guide - Low Income Housing</title>
 
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://mdnurulhasnat343.github.io/Rental/">
-    <meta property="og:title" content="come on, click on my post and share...">
-    <meta property="og:description" content="Start your journey to homeownership today!">
+    <meta property="og:url" content="https://mdnurulhasnat343.github.io/rental">
     
-    <meta property="og:image" content="https://i.ibb.co/j73FxBn/IMG-20251225-213531.jpg">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="Click here to see available listings">
+    
+    <meta property="og:image" content="https://i.ibb.co.com/fGKkbVVn/cr-w-667-h-500.jpg">
+    <meta property="og:image:secure_url" content="https://i.ibb.co.com/fGKkbVVn/cr-w-667-h-500.jpg">
     <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="628"> <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://i.ibb.co/j73FxBn/IMG-20251225-213531.jpg">
-    
-    <meta name="facebook:cta" content="OPEN_LINK">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
 
     <style>
-        body { margin: 0; padding: 20px; font-family: Arial; text-align: center; background: #f0f2f5; }
-        .box { background: white; padding: 20px; border-radius: 15px; max-width: 400px; margin: auto; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        img { width: 100%; border-radius: 10px; }
-        .btn { display: block; background: #007bff; color: white; padding: 15px; text-decoration: none; border-radius: 30px; margin-top: 20px; font-weight: bold; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .brand-section {
+            text-align: center;
+            margin-bottom: 30px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out 0.3s forwards;
+        }
+        
+        .brand-name {
+            font-size: 36px;
+            font-weight: 800;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .image-container {
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+            margin: 0 auto 30px auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+            position: relative;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out 0.5s forwards;
+        }
+        
+        .home-image {
+            width: 100%;
+            height: 110%;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            position: relative;
+            top: -5%;
+            border-radius: 15px;
+        }
+        
+        .headline {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out 0.7s forwards;
+        }
+        
+        .paragraph {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #555;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out 0.9s forwards;
+        }
+        
+        .button-container {
+            text-align: center;
+            margin-bottom: 40px;
+            opacity: 0;
+            transform: scale(0.8);
+            animation: zoomIn 0.8s ease-out 1.1s forwards;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            padding: 14px 40px;
+            font-size: 17px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(231, 76, 60, 0.4);
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(231, 76, 60, 0.6);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #666;
+            border-top: 1px solid #eaeaea;
+            border-radius: 10px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 1.3s forwards;
+        }
+        
+        @keyframes fadeInUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes zoomIn {
+            to { opacity: 1; transform: scale(1); }
+        }
+        
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        
+        @media (max-width: 768px) {
+            .brand-name { font-size: 30px; }
+            .headline { font-size: 28px; }
+            .paragraph { font-size: 16px; }
+            .image-container { height: 350px; max-width: 500px; }
+            .home-image { height: 115%; top: -7.5%; }
+            .cta-button { padding: 12px 35px; font-size: 16px; }
+        }
+        
+        @media (max-width: 480px) {
+            .container { padding: 30px 15px; }
+            .brand-name { font-size: 26px; }
+            .headline { font-size: 24px; }
+            .image-container { height: 300px; border-radius: 12px; }
+            .home-image { height: 120%; top: -10%; border-radius: 12px; }
+            .paragraph { font-size: 15px; }
+        }
     </style>
 </head>
 <body>
-    <div class="box">
-        <img src="https://i.ibb.co/GQ8v16sR/cr-w-1333-h-1000.jpg" alt="House">
-        <h2>Rent To Own Club</h2>
-        <a href="https://www.chd93jds.com/2686CZWN/3QQG7/" class="btn">Find Your Dream Home</a>
+    <div class="container">
+        <div class="brand-section">
+            <div class="brand-name">Rent To Own Club</div>
+        </div>
+        
+        <div class="image-container">
+            <img src="https://i.ibb.co.com/fGKkbVVn/cr-w-667-h-500.jpg" alt="Beautiful Home for Rent to Own" class="home-image">
+        </div>
+        
+        <h1 class="headline">Find Your Perfect Home In Your Area</h1>
+        
+        <p class="paragraph">Start your home search by clicking on “View Listings” and entering your zip code to explore available homes around your area.</p>
+        
+        <div class="button-container">
+            <a href="https://www.chd93jds.com/2686CZWN/2LS592/" class="cta-button">View Listings</a>
+        </div>
     </div>
+    
+       <footer class="footer">
+        <p>Copyright &copy; 2026. All rights reserved.</p>
+    </footer>
 </body>
 </html>
